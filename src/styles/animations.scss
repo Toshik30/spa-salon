@@ -1,0 +1,62 @@
+@keyframes round1 { 
+    50% {
+        top: 24%;
+        right: 41%;
+        transform: scale(1.5);
+    }
+    100% {
+        top: 17%;
+        right: 38%;
+    }
+}
+@keyframes round2 { 
+    50% {
+        top: 25%;
+        right: 29%;
+        transform: scale(1.4);
+    }
+    100% {
+        top: 40%;
+        right: 40%;
+    }
+}
+@keyframes round3 { 
+    50% {
+        top: -25%;
+        right: 8%;
+    }
+    100% {
+        top: -10%;
+        right: 14%;
+    }
+}
+@keyframes playRotate {
+    to {
+        transform: rotate(2turn);
+    }
+}
+@keyframes animRound1 {
+    50% {
+        transform: translate(2px, 90px);
+    }
+    100% {
+        transform: translate(60px,20px);
+    }
+}
+@keyframes animRound2 {
+    50% {
+        transform: translate(10px, 280px);
+        
+    }
+    100% {
+        transform: translate(90px,120px);
+    }
+}
+@keyframes animRound3 {
+    50% {
+        transform: translate(310px, 90px);
+    }
+    100% {
+        transform: translate(20px,180px);
+    }
+}

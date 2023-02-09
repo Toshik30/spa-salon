@@ -1,0 +1,45 @@
+@import '@styles/variables.scss';
+
+.footer {
+    background: $black-color;
+    width: 100%;
+    bottom: 0;
+    color: $white-color;
+    &__wrapper {
+        @extend %flex-between;
+        align-items: inherit;
+    }
+    &__contacts {
+        padding: 75px 0px 70px;
+        &__media {
+            @extend %align-center;
+            &__item {
+                @extend %flex-center;
+                width: 65px;
+                height: 65px;
+                border-radius: $brdr-round;
+                border: 1px solid #ffffff4f;
+                margin-right: 30px;
+                a {
+                    height: 35px;
+                }
+            }
+        }
+    }
+    &__item {
+        opacity: .8;
+        @extend %align-center;
+        margin-bottom: 30px ;
+        img {
+            margin-right: 35px;
+        }
+    }
+    &__img {
+        background: url(../../../public/img/footer/Intersect.png)top right no-repeat;
+        background-size: contain;
+        max-width: 550px;
+        width: 100%;
+        display: flex;
+        height: 430px;
+    }
+}

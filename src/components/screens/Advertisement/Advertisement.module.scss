@@ -1,0 +1,48 @@
+@import '@styles/variables.scss';
+@import '@styles/animations.scss';
+
+.advertisement {
+    background: #f6dacc4f;
+    margin-bottom: 100px;
+    &__wrapper {
+        @extend %flex-between;
+        &__img {
+            display: flex;
+            position: relative;
+            .animRaund {
+                background: $powder-color;
+                position: absolute;
+                border-radius: $brdr-round;
+                z-index: -1;
+                &:nth-last-child(1) {
+                    width: 50px;
+                    height: 50px;
+                    transform: translate(60px,20px);
+                    animation: animRound1 7s linear infinite;
+                }
+                &:nth-last-child(2) {
+                    width: 30px;
+                    height: 30px;
+                    transform: translate(90px,120px);
+                    animation: animRound2 13s linear infinite;
+                }
+                &:nth-last-child(3) {
+                    width: 80px;
+                    height: 80px;
+                    transform: translate(20px,180px);
+                    animation: animRound3 16s linear infinite;
+                }
+            }
+        }
+        &__ctn {
+            h1 {
+                margin-bottom: 20px;
+            }
+            p {
+                max-width: 415px;
+                font-size: $fz-h3;
+                line-height: $fz-h3 + 5px;
+            }
+        }
+    }
+}

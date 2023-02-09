@@ -1,0 +1,37 @@
+@import '@styles/variables.scss';
+
+.PhoneForm {
+    border-radius: $brdr-btn;
+    border: $border-powder;
+    @extend %flex-between;
+    font-size: $fz-primary;
+    line-height: $fz-primary + 4px;
+    margin-top: 60px;
+    &__phone {
+        background: #FFF5F0;
+        border: none;
+        padding: 18px 0px 18px 32px;
+        border-radius: $brdr-btn;
+        color: #00000046;
+        font-size: $fz-primary;
+        line-height: $fz-primary + 4px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__submit {
+        border-radius: $brdr-btn;
+        background: $powder-color;
+        border: none;
+        display: flex;
+        padding: 18px 62px;
+        font-size: $fz-primary;
+        line-height: $fz-primary + 4px;
+        color: $white-color;
+        cursor: pointer;
+        transition: .3s padding;
+        &:hover {
+            padding-left: 80px;
+        }
+    }
+}

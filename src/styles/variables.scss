@@ -1,0 +1,33 @@
+$primary-color: #F6DACC;
+$powder-color: #EABEAB;
+$black-color: #372317;
+$white-color: #ffffff;
+
+$border-powder: 1px solid $powder-color;
+$border-black: 1px solid $black-color;
+
+$brdr-btn: 20px 0px 0px 20px;
+$brdr-round: 100%;
+
+$fz-h1: 48px;
+$fz-h2: 32px;
+$fz-h3: 24px;
+$fz-primary: 20px;
+$fz-medium: 18px;
+$fz-small: 15px;
+$fz-usmall: 13px;
+
+%flex-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+%flex-between {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+%align-center {
+    display: flex;
+    align-items: center;
+}

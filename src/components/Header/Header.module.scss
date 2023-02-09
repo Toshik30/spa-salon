@@ -1,0 +1,27 @@
+@import '@styles/variables.scss';
+.header {
+    padding: 45px 0px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    transition: .4s;
+    &.active {
+        background: $primary-color;
+        padding: 20px 0px;
+    }
+   &__wrapper {
+        @extend %flex-between;
+   }
+   &__logo {
+    font-size: $fz-small;
+   }
+   &__nav {
+    font-size: $fz-small;
+    ul {
+        @extend %align-center;
+        li {
+            padding: 0px 25px ;
+        }
+    }
+   }
+}

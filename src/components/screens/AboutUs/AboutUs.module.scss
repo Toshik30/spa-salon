@@ -1,0 +1,69 @@
+@import '@styles/variables.scss';
+@import '@styles/animations.scss';
+
+.AboutUs {
+    padding: 50px 0px;
+
+    &__wrapper {
+        @extend %flex-between;
+        padding-top: 30px;
+        &__img {
+            max-width: 550px;
+            width: 100%;
+            align-self: stretch;
+            position: relative;
+            background: url(../../../../public/img/AboutUs/Intersect.png) no-repeat;
+            &__play {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                background: url(../../../../public/img/AboutUs/Play.png) no-repeat;
+                bottom: 40px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 90px;
+                    width: 90px;
+                    border: 1px solid transparent;
+                    border-left: $border-black;
+                    border-bottom: $border-black;
+                    left: -6px;
+                    top: -6px;
+                    border-radius: $brdr-round;
+                    pointer-events: none;
+                }
+                &:hover:before {
+                    animation: playRotate 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+                }
+            }
+        }
+        &__ctn {
+            max-width: 605px;
+            width: 100%;
+           
+        }
+        &__text {
+            margin-bottom: 40px;
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            &__item {
+                width: 50%;
+                @extend %align-center;
+                margin-bottom: 25px;
+
+                img {
+                    margin-right: 24px;
+                }
+                strong {
+                    font-weight: 400;
+                    font-size: $fz-primary;
+                }
+            }
+        }
+    }
+}

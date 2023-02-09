@@ -1,0 +1,39 @@
+@import '@styles/variables.scss';
+
+.form {
+    padding: 50px 0px;
+    &__wrapper {
+        @extend %flex-between;
+        align-items: flex-start;
+        &__ctn {
+            margin-left: 30px; 
+            p {
+                max-width: 495px;
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+        &__form {
+            @extend %flex-between;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            input,select {
+                max-width: 285px;
+                width: 100%;
+                padding: 10px 0px;
+                border: transparent;
+                border-bottom: $border-black;
+                margin-bottom: 40px;
+                color: #000000b6;
+                &:focus {
+                    outline: none;
+                }
+            }
+           
+            button {
+                margin-left: auto;
+                display: block;
+            }
+        }
+    }
+}

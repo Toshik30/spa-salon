@@ -1,0 +1,25 @@
+{
+    "header": [
+        {
+            "text": "Home",
+            "href": "#Home"
+        },
+        {
+            "text": "About us",
+            "href": "#AboutUs"
+        },
+        {
+            "text": "Services",
+            "href": "#Services"
+        },
+        {
+            "text": "Stock",
+            "href": "#Stock"
+        },
+        {
+            "text": "Contacts",
+            "href": "#Contacts"
+        }
+    ],
+    "logo": "Royal Spa Relax"
+}

@@ -1,0 +1,42 @@
+{
+    "footer": [
+        {
+            "heading": "+38 (096) -394-64-95",
+            "img": "/img/footer/Phone.png",
+            "title": "Phone Icon"
+
+        }, 
+        {
+            "heading": "salonspa2022@gmail.com",
+            "img": "/img/footer/Email.png",
+            "title": "Phone Icon"
+        }, 
+        {
+            "heading": "Mon - Sun, 10 a.m. - 10 p.m.",
+            "img": "/img/footer/Clock.png",
+            "title": "Clock Icon"
+        }, 
+        {
+            "heading": "Kharkiv, st. Sumskaya 128 ",
+            "img": "/img/footer/MapPin.png",
+            "title": "MapPin Icon"
+        }
+    ],
+    "media": [
+        {
+            "img": "/img/footer/TelegramLogo.png",
+            "title": "Telegram Logo",
+            "href": "https://web.telegram.org/"
+        },
+        {
+            "img": "/img/footer/TwitterLogo.png",
+            "title": "Twitter Logo ",
+            "href": "https://twitter.com/"
+        },
+        {
+            "img": "/img/footer/InstagramLogo.png",
+            "title": "Instagram Logo ",
+            "href": "https://www.instagram.com/"
+        }
+    ]
+}

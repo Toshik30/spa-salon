@@ -1,0 +1,55 @@
+@import '@styles/variables.scss';
+
+.main {
+    padding-top: 110px;
+    position: relative;
+    &__wrapper {
+        @extend %flex-between;
+        padding-top: 40px;
+    }
+    &__text {
+        max-width: 550px;
+        width: 100%;
+      
+        p {
+            padding: 20px 0px 60px;
+        }
+    }
+    &__slider {
+        display: flex;
+        max-width: 550px;
+        width: 100%;
+    }
+    .animRound {
+        position: absolute;
+        display: block;
+        background: $powder-color;
+        border-radius: $brdr-round;
+        z-index: -1;
+        opacity: .5;
+        pointer-events: none;
+        
+        &:nth-last-child(1) {
+            width: 50px;
+            height: 50px;
+            top: 17%;
+            right: 38%;
+            animation: round1 4s linear infinite;
+        }
+        &:nth-last-child(2) {
+            width: 100px;
+            height: 100px;
+            top: 40%;
+            right: 40%;
+            animation: round2 6s linear infinite;
+        }
+        &:nth-last-child(3) {
+            width: 400px;
+            height: 400px;
+            top: -10%;
+            right: 14%;
+            animation: round3 7s linear infinite;
+        }
+    }
+}
+@import '@styles/animations.scss'

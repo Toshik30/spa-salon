@@ -1,0 +1,48 @@
+{
+    "head": "About us",
+    "aboutus": [
+        {
+            "heading": "We give people happiness",
+            "text": "Forget about tiresome flights, language barriers and acclimatization, let yourself have a vacation without leaving our complex! The sounds of calm music, the soaring aromas of exotic essential oils, the flickering of candles and the amazing rituals of beauty and health will take you away from the bustle of the city to a paradise where everything is for you and give birth to Vos"
+        }
+    ],
+    "list": [
+        {
+            "img": "/img/AboutUs/IconAboutUs.png",
+            "tagline": "We have",
+            "description": "The best specialists"
+
+        },
+        {
+            "img": "/img/AboutUs/MusicNotesSimple.png",
+            "tagline": "We have",
+            "description": "Relaxing music"
+
+        },
+        {
+            "img": "/img/AboutUs/Tag.png",
+            "tagline": "We have",
+            "description": "Best prices"
+
+        },
+        {
+            "img": "/img/AboutUs/MapPinLine.png",
+            "tagline": "We have",
+            "description": "Convenient location"
+
+        },
+        {
+            "img": "/img/AboutUs/Coffee.png",
+            "tagline": "We have",
+            "description": "Comfort"
+
+        },
+        {
+            "img": "/img/AboutUs/Phone.png",
+            "tagline": "We have",
+            "description": "To always for you"
+
+        }
+    ]
+    
+}

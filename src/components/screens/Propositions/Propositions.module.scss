@@ -1,0 +1,66 @@
+@import '@styles/variables.scss';
+
+.propositions {
+    padding: 50px 0px 100px;
+    &__wrapper {
+        @extend %flex-between;
+        flex-wrap: wrap;
+        padding: 60px 0px 50px;
+    }
+    &__card {
+        border: $border-powder;
+        border-radius: $brdr-btn;
+        max-width: 370px;
+        width: 100%;
+        text-align: center;
+        padding: 2;
+        &__head {
+            background: #f6dacc28;
+            padding: 30px 0px;
+
+            p {
+                color: $powder-color;
+            }
+        }
+        &__img {
+            border-radius: $brdr-round;
+            background: #f6dacc5b;
+            width: 100px;
+            height: 100px;
+            @extend %flex-center;
+            margin: 0 auto 20px;
+        }
+        &__body {
+            padding: 30px 0px;
+            button {
+                margin-top: 25px;
+                transition: .3s;
+                &:hover {
+                    background: $primary-color;
+                    border: $border-black;
+                }
+            }
+            p {
+                position: relative;
+                width: fit-content;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                &:before,&:after {
+                    content: '';
+                    position: absolute;
+                    background: url('../../../../public/img/Propositions/img.png')center center no-repeat;
+                    background-size: contain;
+                    width: 32px;
+                    height: 32px;
+                    top: -3px;
+                }
+                &:before {
+                    left: -45px;
+                }
+                &:after {
+                    right: -45px;
+                }
+            }
+        }
+    }
+}

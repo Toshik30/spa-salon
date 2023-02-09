@@ -1,0 +1,29 @@
+{
+    "heading": {
+        "text": "Special propositions",
+        "subtext": "Buy a certificate for your relatives, and make them happy"
+    },
+    "cards": [
+        {
+            "img": "/img/Propositions/img.png",
+            "nameCard": "Certificate for 1000-2000grn",
+            "time": "Time: for two years ",
+            "price": "Price: 1500 - 2000uah",
+            "btnText": "To choose"
+        },
+        {
+            "img": "/img/Propositions/img.png",
+            "nameCard": "Vip Gold Card",
+            "time": "Time: for two years ",
+            "price": "Price: 3000uah",
+            "btnText": "To choose"
+        },
+        {
+            "img": "/img/Propositions/img.png",
+            "nameCard": "Certificate for Discount -40%",
+            "time": "Time: for two years ",
+            "price": "Price: 1799uah",
+            "btnText": "To choose"
+        }
+    ]
+}

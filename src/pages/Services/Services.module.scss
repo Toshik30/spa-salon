@@ -1,0 +1,91 @@
+@import '@styles/variables.scss';
+
+.services {
+    padding: 0px 0px 50px;
+    &__wrapper {
+        @extend %flex-between;
+        flex-wrap: wrap;
+
+        &__item {
+            max-width: 390px;
+            padding: 20px;
+            align-self: stretch;
+            position: relative;
+            h3 {
+                opacity: .8;
+                margin: 10px 0px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 40px;
+            }
+            .price {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: $white-color;
+                padding: 5px 17px;
+                font-size: 16px;
+                line-height: 20px;
+                border-radius: $brdr-btn;
+                color: $black-color;
+            }
+            .goDetails {
+                font-size: $fz-medium;
+                color: #000000b0;
+                position: absolute;
+                bottom: 20px;
+                cursor: pointer;
+                @extend %align-center;
+               
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 7px;
+                    width: 50px;
+                    background:  url(../../../public/img/Categories/slider/ArrowRight.png) center no-repeat;
+                    background-size: contain;
+                    margin-left: 10px;
+                    transition: .3s margin-left;
+                }
+                &:hover:after {
+                    margin-left: 20px;
+                }
+            }
+            
+        }
+    }
+    .toCatalogBtn {
+        margin-left: auto;
+        display: block;
+        font-size: $fz-usmall;
+        line-height: 16px;
+        color: #372317b9;
+        margin-top: 30px;
+        &:after {
+            content: '';
+            display: block;
+            height: 7px;
+            width: 50px;
+            background:  url(../../../public/img/Categories/slider/ArrowRight.png) center no-repeat;
+            background-size: contain;
+            margin-left: 10px;
+            transition: .3s ;
+            transform: translate(0px, -50px);
+        }
+        &:before {
+            content: '';
+            display: block;
+            margin-left: auto;
+            margin-bottom: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: $brdr-round;
+            border: $border-black;
+        }
+        &:hover:after {
+            transform: translate(10px, -50px);
+        }
+    }
+}
