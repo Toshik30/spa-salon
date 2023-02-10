@@ -7,6 +7,7 @@ import Footer from '@components/Footer/Footer'
 import Head from 'next/head'
 
 const App = ({ Component, pageProps }: AppProps) => {
+ 
   return (
     <Provider store={store}>
       <Head>

@@ -20,7 +20,7 @@
       "@components/*": ["components/*"],
       "@data/*": ["data/*"],
       "@styles/*": ["styles/*"],
-      "@types/*": ["types/*"],
+      "@type/*": ["types/*"],
       "@store/*": ["store/*"],
     }
   },

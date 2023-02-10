@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import styles from './Services.module.scss'
 import servicesData from '@data/servicesData.json'
-import { servicesTypes } from 'types/types'
+import { servicesTypes } from '@type/types'
 import Image from 'next/image'
 import Link from 'next/link'
 const Services: FunctionComponent = () => {

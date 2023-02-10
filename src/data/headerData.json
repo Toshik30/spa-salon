@@ -21,5 +21,9 @@
             "href": "#Contacts"
         }
     ],
-    "logo": "Royal Spa Relax"
+    "logo": "Royal Spa Relax",
+    "menu": {
+        "iconBasket": "/img/Header/ShoppingBag.png",
+        "iconUser": "/img/Header/User.png"
+    }
 }

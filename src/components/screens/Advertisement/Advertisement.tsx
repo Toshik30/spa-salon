@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from './Advertisement.module.scss'
 import advertisementData from '@data/advertisementData.json'
-import { advertisementTypes } from 'types/types'
-import PhoneForm from '@components/FormPhone/PhoneForm'
+import { advertisementTypes } from '@type/types'
+import PhoneForm from '@components/UI/FormPhone/PhoneForm'
 
 const Advertisement = () => {
     const {img, advertisement} : advertisementTypes = advertisementData

@@ -1,7 +1,7 @@
 import styles from './Footer.module.scss'
 import  footerData from '@data/footerData.json'
 import Image from 'next/image'
-import { footerTypes } from 'types/types'
+import { footerTypes } from '@type/types'
 import Link from 'next/link'
 const Footer = () => {
   const {footer, media}:footerTypes = footerData

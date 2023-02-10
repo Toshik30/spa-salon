@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
-import { categoriesSlideTypes } from 'types/types';
+import { categoriesSlideTypes } from '@type/types';
 
 
 const Categories = () => {

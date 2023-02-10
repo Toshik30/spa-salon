@@ -1,6 +1,7 @@
 export type headerTypes = {
    header: Array<{text: string,href: string}>
-   logo: string
+   logo: string,
+   menu: {iconBasket: string, iconUser:string}
 }
 
 export type mainTypes = {

@@ -1,6 +1,6 @@
 import styles from './AboutUs.module.scss'
 import aboutusData from '@data/aboutusData.json'
-import { aboutUsTypes } from 'types/types'
+import { aboutUsTypes } from '@type/types'
 import Image from 'next/image'
 const AboutUs = () => {
     const {head, aboutus, list} : aboutUsTypes = aboutusData

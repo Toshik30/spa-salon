@@ -1,0 +1,65 @@
+@import '@styles/variables.scss';
+.wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $white-color;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s ease;
+    &[data-loading="true"] {
+        opacity: 1;
+        pointer-events: visible;
+        transition: all .2s ease;
+    }
+   
+}
+
+.row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: loader-rotate 2s infinite linear;
+}
+
+.item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: $powder-color;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: loader-bounce 2s infinite ease-in-out;
+
+    &:last-child {
+        top: auto;
+        bottom: 0;
+        animation-delay: -1s;
+    }
+}
+
+@keyframes loader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-bounce {
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}

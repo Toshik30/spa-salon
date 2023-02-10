@@ -2,8 +2,8 @@ import Image from 'next/image'
 import React, { FunctionComponent } from 'react'
 import styles from './FormAplication.module.scss'
 import aplicationFormData from '@data/aplicationFormData.json'
-import { aplicationFormTypes, servicesTypes } from 'types/types'
-import CustomBtn from '@components/CutstomBtn/CustomBtn'
+import { aplicationFormTypes, servicesTypes } from '@type/types'
+import CustomBtn from '@components/UI/CutstomBtn/CustomBtn'
 import { useForm, SubmitHandler } from "react-hook-form"
 import servicesData from '@data/servicesData.json'
 

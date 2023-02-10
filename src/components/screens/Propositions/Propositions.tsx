@@ -1,8 +1,8 @@
 import styles from './Propositions.module.scss'
 import propositionsData from '@data/propositionsData.json'
-import { propositionsTypes } from 'types/types'
+import { propositionsTypes } from '@type/types'
 import Image from 'next/image'
-import CustomBtn from '@components/CutstomBtn/CustomBtn'
+import CustomBtn from '@components/UI/CutstomBtn/CustomBtn'
 const Propositions = () => {
     const {heading, cards}:propositionsTypes = propositionsData
     return (
