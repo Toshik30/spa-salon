@@ -1,7 +1,6 @@
 @import '@styles/variables.scss';
 
 .main {
-    padding-top: 110px;
     position: relative;
     &__wrapper {
         @extend %flex-between;

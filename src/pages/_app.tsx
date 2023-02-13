@@ -2,12 +2,11 @@ import '@styles/globals.scss'
 import type { AppProps } from 'next/app'
 import store from '@store/store'
 import { Provider } from 'react-redux'
-import Header from '@components/Header/Header'
-import Footer from '@components/Footer/Footer'
 import Head from 'next/head'
+import Layout from '@components/Layout/Layout'
 
 const App = ({ Component, pageProps }: AppProps) => {
- 
+  console.log({...pageProps})
   return (
     <Provider store={store}>
       <Head>
@@ -16,9 +15,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-      <Component {...pageProps} />
-      <Footer/>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Provider>
   )
 }

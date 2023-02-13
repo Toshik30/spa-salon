@@ -1,0 +1,10 @@
+{
+    "catalogHeading": "All catalog",
+    "catalogRoutsName": "Home | Services we provide | All catalog",
+    "filters": {
+        "filterBtn": "Filter",
+        "sortBy": ["The cheapest", "most expensive", "new"],
+        "drop": [16, 25, 50]
+        
+    } 
+}

@@ -45,3 +45,13 @@ export type aplicationFormTypes = {
     img:string,
     textBtn:string
 }
+export type catalogTypes = {
+    catalogHeading: string,
+    catalogRoutsName: string,
+    filters:{
+        filterBtn: string,
+        sortBy:Array<string>,
+        drop: Array<number>
+    }
+
+}

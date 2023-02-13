@@ -2,7 +2,7 @@
     "header": [
         {
             "text": "Home",
-            "href": "#Home"
+            "href": "/"
         },
         {
             "text": "About us",
@@ -10,7 +10,7 @@
         },
         {
             "text": "Services",
-            "href": "#Services"
+            "href": "Catalog"
         },
         {
             "text": "Stock",

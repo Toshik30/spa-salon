@@ -4,6 +4,7 @@ import { headerTypes } from '@type/types'
 import { FunctionComponent, useEffect, useState } from 'react'
 import NavDesktop from './NavDesktop'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Header: FunctionComponent = () => {
   const {logo, menu}:headerTypes = headerData
@@ -17,7 +18,7 @@ const Header: FunctionComponent = () => {
         <div className="container">
             <div className={styles.header__wrapper}>
                 <div className={styles.header__logo}>
-                  <span>{logo}</span>
+                  <Link href='/'>{logo}</Link>
                 </div>
                 <NavDesktop/>
                 <div className={styles.header__menu}>

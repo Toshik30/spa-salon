@@ -2,6 +2,7 @@ import styles from './Main.module.scss'
 import mainData from '@data/mainData.json'
 import {mainTypes} from '@type/types'
 import CustomBtn from '@components/UI/CutstomBtn/CustomBtn'
+
 const Main = () => {
     const {main}:mainTypes = mainData
     console.log()

@@ -89,3 +89,30 @@
         }
     }
 }
+.catalog {
+    .opacity5 {
+        opacity: .5;
+    }
+    &__wrapper {
+        @extend %flex-between;
+    }
+    &__filter {
+        @extend %align-center;
+        input {
+            border: none;
+            border-bottom: $border-black;
+            padding: 10px 0px;
+            font-size: 16px;
+            line-height: $fz-primary;
+            &:focus {
+                outline: none;
+            }
+        }
+        &__until {
+            margin: 0px 30px;
+        }
+    }
+    .catalogBtn {
+        background: $powder-color;
+    }
+}
