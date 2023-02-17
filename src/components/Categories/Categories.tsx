@@ -10,6 +10,7 @@ import { categoriesSlideTypes } from '@type/types';
 
 const Categories = () => {
     const {slider}: categoriesSlideTypes = categoriesSlider
+    
     return (
         <section className={styles.categories}>
             <div className="container">
@@ -20,15 +21,19 @@ const Categories = () => {
                     slidesPerView={2}
                     spaceBetween={30}
                     pagination={{clickable: true }}
-                    autoplay={{ delay: 2500 }}
+                    loopPreventsSliding={true}
+                    // autoplay={{ delay: 2500}}
                     loop={true}
                     navigation={true}
                     modules={[Pagination, Navigation, Autoplay]}
                     className={styles.categoriesSlider}
                 >
                     {slider.map(({text, src, title}, index) => (
-                        <SwiperSlide 
-                            style={{background:`url(${src}) center center no-repeat`, backgroundSize: 'cover', width:'490 !important',height:250}} key={index } className={styles.categoriesSlider__slide} >
+                        <SwiperSlide
+                            style={{background:`url(${src}) center center no-repeat`, backgroundSize: 'cover', width:'490 !important',height:250}} 
+                            key={index } 
+                            className={styles.categoriesSlider__slide} 
+                        >
                             <h3>{text}</h3>
                         </SwiperSlide>
                     ))}

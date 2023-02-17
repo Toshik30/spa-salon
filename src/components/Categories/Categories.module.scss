@@ -2,18 +2,26 @@
 
 .categories {
     padding: 50px 0px;
+    @include lmd {
+        padding: 30px 0px;
+    }
 }
 .categoriesSlider {
-    padding: 70px 0px;
     margin-top: 40px;
     height: 330px;
-
+    @include lmd {
+        height:270px;
+    }
     &__slide {
         border-radius: $brdr-btn;
         color: $white-color;
         max-width: 495px !important;
         width: 100% !important;
         position: relative;
+        @include lmd {
+            max-width: 280px !important;
+            height: 180px !important;
+        }
         
         h3 {
             position: absolute;

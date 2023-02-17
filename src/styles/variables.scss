@@ -17,6 +17,11 @@ $fz-medium: 18px;
 $fz-small: 15px;
 $fz-usmall: 13px;
 
+$phone: 480px;
+$phablet: 576px;
+$tablet: 820px;
+$tablet-large: 992px;
+
 %flex-center {
     justify-content: center;
     align-items: center;
@@ -30,4 +35,25 @@ $fz-usmall: 13px;
 %align-center {
     display: flex;
     align-items: center;
+}
+
+@mixin lmd {
+    @media (max-width: #{$tablet-large}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: #{$phablet}) {
+        @content;
+    }
+}
+@mixin xs {
+    @media (max-width: #{$phone}) {
+        @content;
+    }
 }

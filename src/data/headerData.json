@@ -1,24 +1,34 @@
 {
     "header": [
         {
+            "text": "Profile",
+            "href": "Profile",
+            "icon": "/img/Header/Profile.png"
+        },
+        {
             "text": "Home",
-            "href": "/"
+            "href": "/",
+            "icon": "/img/Header/HouseLine.png"
         },
         {
             "text": "About us",
-            "href": "#AboutUs"
+            "href": "#AboutUs",
+            "icon": "/img/Header/AboutUs.png"
         },
         {
             "text": "Services",
-            "href": "Catalog"
+            "href": "Catalog",
+            "icon": "/img/Header/Coffee.png"
         },
         {
             "text": "Stock",
-            "href": "#Stock"
+            "href": "#Stock",
+            "icon": "/img/Header/Percent.png"
         },
         {
             "text": "Contacts",
-            "href": "#Contacts"
+            "href": "#Contacts",
+            "icon": "/img/Header/Phone.png"
         }
     ],
     "logo": "Royal Spa Relax",

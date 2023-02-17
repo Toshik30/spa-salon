@@ -25,6 +25,9 @@ body {
 }
 .main {
   padding-top: 127px;
+  @include lmd {
+    padding-top: 70px;
+  }
 }
 .container {
   margin: 0 auto;
@@ -61,6 +64,9 @@ h2 {
   font-size: $fz-h2;
   line-height: $fz-h2 + 7px;
   font-weight: 400;
+  @include lmd {
+    text-align: center;
+  }
 }
 h3 {
   font-size: $fz-h3;

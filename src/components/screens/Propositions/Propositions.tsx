@@ -1,39 +1,25 @@
 import styles from './Propositions.module.scss'
 import propositionsData from '@data/propositionsData.json'
 import { propositionsTypes } from '@type/types'
-import Image from 'next/image'
-import CustomBtn from '@components/UI/CutstomBtn/CustomBtn'
-const Propositions = () => {
-    const {heading, cards}:propositionsTypes = propositionsData
+import { FunctionComponent,useState,useEffect } from 'react'
+import Slider from './Slider'
+
+
+const Propositions:FunctionComponent = () => {
+    const [windowWidth, setWindowWidth] = useState(1100)
+    const {heading}:propositionsTypes = propositionsData
+    useEffect(() => {
+        const handleWindowResize = () =>   setWindowWidth(window.innerWidth)
+        window.addEventListener('resize', handleWindowResize)
+        return () =>  window.removeEventListener('resize', handleWindowResize)
+    })
     return (
         <section className={styles.propositions}>
             <div className="container">
-                <h2>{heading.text}</h2>
-                <p>{heading.subtext}</p>
+                <h2>{windowWidth > 1024 ? heading.text : heading.tabletText}</h2>
+                <p>{windowWidth > 1024 ? heading.subtext : heading.tabletSubtext}</p>
                 <div className={styles.propositions__wrapper}>
-                    {cards.map(({img,nameCard,time,price,btnText},index) => (
-                        <div className={styles.propositions__card} key={index}>
-                            <div className={styles.propositions__card__head}>
-                                <div className={styles.propositions__card__img}>
-                                    <Image alt='img' src={img} width={60} height={60} />
-                                </div>
-                                <p>{nameCard}</p>
-                            </div>
-                            <div className={styles.propositions__card__body}>
-                                <p>
-                                    {time.split(' ').map((word,index) => (
-                                        <span key={index} className={index === 0 ? 'c-black': ''}> {word} </span>
-                                    ))}
-                                </p>
-                                <p>
-                                    {price.split(' ').map((word,index) => (
-                                        <span key={index} className={index === 0 ? 'c-black': ''}> {word} </span>
-                                    ))}
-                                </p>
-                                <CustomBtn text={btnText} customStyle='btn powderBrdr'/>
-                            </div>
-                        </div>
-                    ))}
+                    <Slider />
                 </div>
             </div>
         </section>

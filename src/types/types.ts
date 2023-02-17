@@ -1,5 +1,5 @@
 export type headerTypes = {
-   header: Array<{text: string,href: string}>
+   header: Array<{text: string,href: string, icon:string}>
    logo: string,
    menu: {iconBasket: string, iconUser:string}
 }
@@ -24,7 +24,7 @@ export type aboutUsTypes = {
 }
 
 export type propositionsTypes = {
-    heading: {text:string, subtext: string}
+    heading: {text:string, subtext: string, tabletText:string, tabletSubtext:string}
     cards: Array<{img:string, nameCard:string,time:string,price:string,btnText:string}>
 }
 

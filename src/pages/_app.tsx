@@ -6,7 +6,6 @@ import Head from 'next/head'
 import Layout from '@components/Layout/Layout'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  console.log({...pageProps})
   return (
     <Provider store={store}>
       <Head>

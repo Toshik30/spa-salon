@@ -5,6 +5,11 @@
     &__wrapper {
         @extend %flex-between;
         padding-top: 40px;
+        flex-wrap: wrap;
+        @include lmd {
+            justify-content: center;
+            text-align: center;
+        }
     }
     &__text {
         max-width: 550px;

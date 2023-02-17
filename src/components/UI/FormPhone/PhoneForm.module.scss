@@ -6,7 +6,12 @@
     @extend %flex-between;
     font-size: $fz-primary;
     line-height: $fz-primary + 4px;
+    background: #FFF5F0;
     margin-top: 60px;
+    @include lmd {
+        max-width: 630px;
+        margin: 25px auto 0px;
+    }
     &__phone {
         background: #FFF5F0;
         border: none;

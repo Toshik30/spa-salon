@@ -5,10 +5,12 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import NavDesktop from './NavDesktop'
 import Image from 'next/image'
 import Link from 'next/link'
+import NavModile from './NavModile'
 
 const Header: FunctionComponent = () => {
   const {logo, menu}:headerTypes = headerData
   const [isScroll, setIsScroll] = useState(0)
+
   useEffect(() => {
     window.addEventListener('scroll', () => setIsScroll(window.scrollY))
   },[])
@@ -25,8 +27,9 @@ const Header: FunctionComponent = () => {
                   <a href="" className={styles.header__menu__basket}>
                     <Image src={menu.iconBasket} alt='basket' width={32} height={32}/>
                   </a>
-                  <Image src={menu.iconUser} alt='user icon' width={32} height={32}/>
+                  <Image src={menu.iconUser} className={styles.userIcon} alt='user icon' width={32} height={32}/>
                 </div>
+                <NavModile/>
             </div>
         </div>
     </header>

@@ -2,15 +2,25 @@
 
 .propositions {
     padding: 50px 0px 100px;
+    @include lmd {
+        padding: 40px 0px;
+    }
     &__wrapper {
         @extend %flex-between;
         flex-wrap: wrap;
         padding: 60px 0px 50px;
     }
+    h2 + p {
+        @include lmd {
+            text-align: center;
+            font-size: $fz-medium;
+            margin-top: 30px;
+        }
+    }
     &__card {
         border: $border-powder;
         border-radius: $brdr-btn;
-        max-width: 370px;
+        max-width: 370px !important;
         width: 100%;
         text-align: center;
         padding: 2;
@@ -63,4 +73,10 @@
             }
         }
     }
+}
+.propSlider {
+    @include lmd {
+        padding: 40px 0px !important;
+    }
+   
 }

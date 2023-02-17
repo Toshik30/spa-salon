@@ -67,7 +67,7 @@
     ],
     "goCatalog": {
         "btnText": "Go all catalog",
-        "src": "/catalog"
+        "src": "/Catalog"
     }
     
 }

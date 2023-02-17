@@ -8,7 +8,7 @@ const NavDesktop: FunctionComponent = () => {
     return (
         <div className={styles.header__nav}>
             <ul>
-                {header.map(({href,text}, index) => (
+                {header.slice(1,5).map(({href,text}, index) => (
                 <li key={index}>
                     <Link href={href}>{text}</Link>
                 </li>

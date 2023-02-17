@@ -4,8 +4,16 @@
 .advertisement {
     background: #f6dacc4f;
     margin-bottom: 100px;
+    @include lmd {
+        margin-bottom: 50px;
+    }
     &__wrapper {
         @extend %flex-between;
+        flex-wrap: wrap;
+        @include lmd {
+            justify-content: center;
+            padding: 50px 0px;
+        }
         &__img {
             display: flex;
             position: relative;
@@ -32,9 +40,25 @@
                     transform: translate(20px,180px);
                     animation: animRound3 16s linear infinite;
                 }
+                &:nth-last-child(4) {
+                    @include lmd {
+                        height: 100%;
+                        width: 100%;
+                        bottom: -100px;
+                        left: 20px;
+                    }
+                }
             }
         }
         &__ctn {
+            @include lmd {
+                background: $white-color;
+                border: $border-powder;
+                border-radius: $brdr-btn;
+                padding: 32px;
+                width: 100%;
+                text-align: center;
+            }
             h1 {
                 margin-bottom: 20px;
             }
@@ -42,6 +66,9 @@
                 max-width: 415px;
                 font-size: $fz-h3;
                 line-height: $fz-h3 + 5px;
+                @include lmd {
+                    margin: 0 auto;
+                }
             }
         }
     }
