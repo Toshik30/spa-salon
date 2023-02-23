@@ -27,6 +27,18 @@ const Services: FunctionComponent = () => {
                             <ServicesItem price={price} itemName={itemName} text={text} goDetails={goDetails} key={index} img={img}/>
                         )) :
                         <Swiper
+                            breakpoints={{
+                               300: {
+                                slidesPerView: 1,
+                                width:220
+                               },
+                               600: {
+                                slidesPerView: 2
+                               },
+                               920: {
+                                slidesPerView: 2
+                               }
+                            }}
                             slidesPerView={2}
                             spaceBetween={50}
                             pagination={true}

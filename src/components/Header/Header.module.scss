@@ -120,8 +120,12 @@
         &.active {
             transform: translate(0%, 47px);
         }
+        @include sm {
+            max-width: 320px;
+        }
     }
     @include lmd {
         display: flex;
     }
+    
 }

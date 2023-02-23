@@ -12,6 +12,11 @@
         max-width: 630px;
         margin: 25px auto 0px;
     }
+    @include sm {
+        max-width: 100%;
+        font-size: $fz-usmall;
+        line-height: $fz-small;
+    }
     &__phone {
         background: #FFF5F0;
         border: none;
@@ -22,6 +27,12 @@
         line-height: $fz-primary + 4px;
         &:focus {
             outline: none;
+        }
+        @include sm {
+            padding: 10px 0px 10px 16px;
+            max-width: 100%;
+            font-size: $fz-usmall;
+            line-height: $fz-small;
         }
     }
     &__submit {
@@ -38,5 +49,15 @@
         &:hover {
             padding-left: 80px;
         }
+        @include sm {
+            padding: 14px 22px;
+            font-size: $fz-usmall;
+            line-height: $fz-small;
+        }
+    }
+    &__error {
+        color: rgba(255, 0, 0, 0.741);
+        font-size: $fz-small;
+        position: absolute;
     }
 }

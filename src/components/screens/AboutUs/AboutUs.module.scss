@@ -23,6 +23,9 @@
                 max-width: inherit;
                 background-size: contain;
             }
+            @include sm {
+                height: 240px;
+            }
             &__play {
                 width: 80px;
                 height: 80px;

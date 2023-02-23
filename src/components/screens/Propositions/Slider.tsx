@@ -23,12 +23,13 @@ const Slider = () => {
                 768: {
                 width: 350,
                 slidesPerView: 1,
+                modules: [Pagination]
                 },
                 1024: {
                     slidesPerView: 3
                 }
             }}
-            slidesPerView={3}
+           
             spaceBetween={60}
             pagination={{clickable: true }}
             modules={[Pagination]}

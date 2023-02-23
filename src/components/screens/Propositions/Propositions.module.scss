@@ -27,7 +27,9 @@
         &__head {
             background: #f6dacc28;
             padding: 30px 0px;
-
+            @include sm {
+                font-size: $fz-medium;
+            }
             p {
                 color: $powder-color;
             }
@@ -42,6 +44,9 @@
         }
         &__body {
             padding: 30px 0px;
+            @include sm {
+                font-size: $fz-small;
+            }
             button {
                 margin-top: 25px;
                 transition: .3s;

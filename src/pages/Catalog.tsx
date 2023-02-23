@@ -3,12 +3,13 @@ import styles from '../components/Services/Services.module.scss'
 import servicesData from '@data/servicesData.json'
 import catalogData from '@data/catalogData.json'
 import { servicesTypes,catalogTypes } from '@type/types'
-import Image from 'next/image'
 import Link from 'next/link'
+import ServicesItem from '@components/Services/ServicesItem'
 
 const Catalog: FunctionComponent = () => {
     const {list, goCatalog}:servicesTypes = servicesData
     const {catalogHeading, catalogRoutsName, filters}:catalogTypes = catalogData
+    
     return (
         <section className={styles.services}>
             <div className="container">
@@ -31,13 +32,7 @@ const Catalog: FunctionComponent = () => {
                 </div>
                 <div className={styles.services__wrapper}> 
                     {list.map(({img,price,itemName,text,goDetails}, index) => (
-                        <div className={styles.services__wrapper__item} key={index}>
-                            <Image src={img} alt={itemName} width={350} height={190}/>
-                            <span className={styles.price}>{price}</span>
-                            <h3>{itemName}</h3>
-                            <p>{text}</p>
-                            <span className={styles.goDetails}>{goDetails}</span>
-                        </div>
+                        <ServicesItem price={price} itemName={itemName} text={text} goDetails={goDetails} key={index} img={img}/>
                     ))}
                     <Link href={goCatalog.src} className={styles.toCatalogBtn}>{goCatalog.btnText}</Link>
                 </div>

@@ -135,6 +135,9 @@ h3 {
   &:hover:after {
     right: -20px;
   }
+  @include lmd {
+    display: none !important;
+  }
 }
 .swiper-button-next {
   &:before {
@@ -149,11 +152,15 @@ h3 {
   &:hover:after {
     left: -20px;
   }
+  @include lmd {
+    display: none !important;
+  }
 }
 .swiper-pagination {
   right: 0;
   width: fit-content !important;
   margin: 0 auto;
+ 
 }
 .swiper-pagination-bullet {
   opacity: 1 !important;

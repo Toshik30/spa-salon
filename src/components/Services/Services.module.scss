@@ -2,13 +2,13 @@
 
 .services {
     padding: 0px 0px 50px;
-    @include lmd {
-        padding: 0;
-    }
+   
     &__wrapper {
         @extend %flex-between;
         flex-wrap: wrap;
-      
+        @include lmd {
+            height: 485px;
+        }
         &__item {
             max-width: 390px;
             padding: 20px;
@@ -16,15 +16,19 @@
             position: relative;
             @include lmd {
                 max-width: 480px;
-                height: 345px;
+                height: 405px;
                 border-radius: $brdr-btn;
                 border: $border-powder;
+            }
+            @include sm {
+                padding: 10px;
             }
             .servicesImg {
                 width: 100%;
                 height: 190px;
                 border-radius: $brdr-btn;
-                @include lmd {
+                background-size: cover !important;
+                @include sm {
                     height: 130px;
                     width: 100%;
                 }
@@ -32,6 +36,9 @@
             h3 {
                 opacity: .8;
                 margin: 10px 0px;
+                @include sm {
+                    font-size: $fz-medium;
+                }
             }
             p {
                 font-size: 16px;
@@ -40,17 +47,29 @@
                 @include lmd {
                     font-size: $fz-small;
                 }
+                @include sm {
+                    font-size: $fz-usmall;
+                }
             }
             .price {
                 position: absolute;
-                top: 20px;
-                right: 20px;
+                top: 50px;
+                right: 00px;
                 background: $white-color;
                 padding: 5px 17px;
                 font-size: 16px;
                 line-height: 20px;
                 border-radius: $brdr-btn;
                 color: $black-color;
+                @include lmd {
+                    top: 20px;
+                    right: 20px;
+                }
+                @include sm {
+                    top: 10px;
+                    right: 10px;
+                    font-size: $fz-usmall;
+                }
             }
             .goDetails {
                 font-size: $fz-medium;
@@ -69,9 +88,15 @@
                     background-size: contain;
                     margin-left: 10px;
                     transition: .3s margin-left;
+                    @include sm {
+                        width: 30px;
+                    }
                 }
                 &:hover:after {
                     margin-left: 20px;
+                }
+                @include sm {
+                    font-size: $fz-small;
                 }
             }
             
@@ -88,7 +113,7 @@
         color: #372317b9;
         margin-top: 30px;
         @include lmd {
-            margin-top: 0px;
+            margin-top: -30px;
         }
         &:after {
             content: '';

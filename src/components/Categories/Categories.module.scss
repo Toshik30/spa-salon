@@ -10,8 +10,9 @@
     margin-top: 40px;
     height: 330px;
     @include lmd {
-        height:270px;
+        height:230px;
     }
+    
     &__slide {
         border-radius: $brdr-btn;
         color: $white-color;

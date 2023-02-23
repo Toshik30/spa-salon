@@ -18,6 +18,11 @@ const Categories = () => {
                     <h2> Categories</h2>
                 </div>
                 <Swiper
+                    breakpoints={{
+                        300: {
+                            width:300
+                        }
+                    }}
                     slidesPerView={2}
                     spaceBetween={30}
                     pagination={{clickable: true }}
@@ -28,7 +33,7 @@ const Categories = () => {
                     modules={[Pagination, Navigation, Autoplay]}
                     className={styles.categoriesSlider}
                 >
-                    {slider.map(({text, src, title}, index) => (
+                    {slider.map(({text, src}, index) => (
                         <SwiperSlide
                             style={{background:`url(${src}) center center no-repeat`, backgroundSize: 'cover', width:'490 !important',height:250}} 
                             key={index } 
@@ -39,7 +44,6 @@ const Categories = () => {
                     ))}
                 </Swiper>
             </div>
-            
         </section>
     )
 }
