@@ -3,28 +3,28 @@
     "list": [
         {
             "img": "/img/Services/image1.png",
-            "price": "2999uah",
+            "price": "2956uah",
             "itemName": "Cosmetology",
             "text": "Beauticians at the Royal Spa Relax beauty salon will help you solve many aesthetic problems with the help of high-quality cosmetics and hardware procedures.",
             "goDetails": "Reserve now"
         },
         {
             "img": "/img/Services/image2.png",
-            "price": "2999uah",
+            "price": "2998uah",
             "itemName": "Classic massage",
             "text": "If you want absolute relaxation, pleasant rest, relaxation of muscles and painful contractures, we offer a classic massage.",
             "goDetails": "Reserve now"
         },
         {
             "img": "/img/Services/image3.png",
-            "price": "2999uah",
+            "price": "1999uah",
             "itemName": "Chocolate spa treatment",
             "text": "The Choco SPA chocolate treatment provides thorough hydration, nourishment and smoothing of the skin.",
             "goDetails": "Reserve now"
         },
         {
             "img": "/img/Services/image4.png",
-            "price": "2999uah",
+            "price": "2119uah",
             "itemName": "Massage with hot stones",
             "text": "Stone massage is an ancient practice of harmonizing the work of body systems based on reflexology",
             "goDetails": "Reserve now"
@@ -38,7 +38,7 @@
         },
         {
             "img": "/img/Services/image6.png",
-            "price": "2999uah",
+            "price": "3799uah",
             "itemName": "Spa manicure ",
             "text": "Well-groomed hands are the key to the health of every woman. Every day we expose our hands to external influences in different seasons.",
             "goDetails": "Reserve now"
@@ -52,7 +52,7 @@
         },
         {
             "img": "/img/Services/image8.png",
-            "price": "2999uah",
+            "price": "2990uah",
             "itemName": "Cosmetology",
             "text": "Beauticians at the Royal Spa Relax beauty salon will help you solve many aesthetic problems with the help of high-quality cosmetics and hardware procedures,",
             "goDetails": "Reserve now"

@@ -32,6 +32,7 @@
             @extend %flex-between;
             flex-wrap: wrap;
             margin-top: 50px;
+            position: relative;
             @include lmd {
                 margin-top: 0px;
             }
@@ -60,7 +61,6 @@
                 }
             }
         }
-       
     }
     &__heading {
         display: none;
@@ -74,5 +74,12 @@
             width: 100%;
             margin: 0px auto 40px;
         }
+    }
+    .error {
+        color: rgba(255, 0, 0, 0.741);
+        font-size: $fz-small;
+        position: absolute;
+        right: 0;
+        bottom: 70px;
     }
 }
