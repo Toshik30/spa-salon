@@ -7,9 +7,17 @@ import { Swiper,SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/pagination'
 import { Pagination } from 'swiper'
+import { useAppDispatch } from '@store/hook'
+import { addToBasket } from '@store/slices/basketSlice'
+import Basket from '@components/Basket/Basket'
+
 
 const Slider = () => {
     const {cards}:propositionsTypes = propositionsData
+    const dispatch = useAppDispatch()
+    const handleAddToBasket = (item:{}) => {
+        dispatch(addToBasket(item))
+    }
     return (
         <Swiper
             breakpoints={{
@@ -35,8 +43,8 @@ const Slider = () => {
             modules={[Pagination]}
             className={styles.propSlider}
         >
-            {cards.map(({img,nameCard,time,price,btnText},index) => (
-                <SwiperSlide className={styles.propositions__card} key={index+img}>
+            {cards.map(({img,nameCard,time,priceText,btnText,id, price}) => (
+                <SwiperSlide className={styles.propositions__card} key={id}>
                     <div className={styles.propositions__card__head}>
                         <div className={styles.propositions__card__img} >
                             <img src={img} alt={nameCard} />
@@ -50,14 +58,15 @@ const Slider = () => {
                             ))}
                         </p>
                         <p>
-                            {price.split(' ').map((word,index) => (
+                            {priceText.split(' ').map((word,index) => (
                                 <span key={index} className={index === 0 ? 'c-black': ''}> {word} </span>
                             ))}
                         </p>
-                        <CustomBtn text={btnText} customStyle='btn powderBrdr'/>
+                        <CustomBtn text={btnText} customStyle='btn powderBrdr' onClick={() => handleAddToBasket({id,price,nameCard})} />
                     </div>
                 </SwiperSlide>
-            ))} 
+            ))}
+            <Basket/>
         </Swiper>
     )
 }

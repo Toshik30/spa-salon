@@ -11,12 +11,12 @@ const postFormDataSlice = createSlice({
         postRequested: (state) => {
             state.loading = true;
         },
-        postSucceeded: (state, action) => {
+        postSucceeded: (state, {payload}) => {
             state.loading = false;
-            state.data = action.payload;
+            state.data = payload;
         },
-        postFailed: (state, action) => {
-            state.error = action.payload
+        postFailed: (state, {payload}) => {
+            state.error = payload
         }
     }
 })

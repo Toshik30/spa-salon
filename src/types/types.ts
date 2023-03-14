@@ -25,7 +25,7 @@ export type aboutUsTypes = {
 
 export type propositionsTypes = {
     heading: {text:string, subtext: string, tabletText:string, tabletSubtext:string}
-    cards: Array<{img:string, nameCard:string,time:string,price:string,btnText:string}>
+    cards: Array<{img:string, nameCard:string,time:string,priceText:string,btnText:string, price: number, id:number}>
 }
 
 export type advertisementTypes = {
