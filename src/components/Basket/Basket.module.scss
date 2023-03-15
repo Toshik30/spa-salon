@@ -1,1 +1,44 @@
 @import '@styles/variables.scss';
+
+.basket {
+    position: absolute;
+    right: -100%;
+    top: 61px;
+    background: $white-color;
+    padding: 20px;
+    border-radius: $brdr-btn;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: .4s all;
+    width: 100%;
+    max-width: 360px;
+    min-height: 280px;
+    &.active {
+        display: block;
+        right: 0;
+    }
+    &__item {
+        @extend %flex-between;
+        margin: 10px 0px;
+        .deleteIcon {
+            display: inherit;
+        }
+    }
+    &__heading {
+        text-align: center;
+    }
+    &__body {
+        font-size: 13px;
+        width: 100%;
+        @extend %flex-between;
+        .nameItem {
+            max-width: 200px;
+            width: 100%;
+        }
+       
+    }
+    &__totalPrice {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}

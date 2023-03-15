@@ -14,7 +14,7 @@ const ServicesItem = ({text,itemName,price,goDetails,img}:Props) => {
     return (
         <div className={styles.services__wrapper__item} >
             <div className={styles.servicesImg} style={{background:`url(${img}) center center no-repeat`}}></div>
-            <span className={styles.price}>{price}</span>
+            <span className={styles.price}>{price}uah</span>
             <h3>{itemName}</h3>
             <p>{text}</p>
             <span className={styles.goDetails}>{goDetails}</span>

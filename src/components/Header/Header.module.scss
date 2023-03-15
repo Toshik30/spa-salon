@@ -17,6 +17,7 @@
     }
    &__wrapper {
         @extend %flex-between;
+        position: relative;
    }
    &__logo {
     font-size: $fz-small;
@@ -39,10 +40,25 @@
     }
     &__basket {
         margin-right: 24px;
+        cursor: pointer;
+        position: relative;
         @include lmd {
             display: flex;
         }
-
+        .quntity {
+            background: red;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            position: absolute;
+            right: -3px;
+            top: -20px;
+            border-radius: $brdr-round;
+            padding: 2px;
+            text-align: center;
+            color: $white-color;
+            font-weight: 400;
+        }
     }
     .userIcon {
         @include lmd {

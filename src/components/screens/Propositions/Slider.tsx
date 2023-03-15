@@ -7,16 +7,18 @@ import { Swiper,SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/pagination'
 import { Pagination } from 'swiper'
-import { useAppDispatch } from '@store/hook'
+import { useAppDispatch, useAppSelector } from '@store/hook'
 import { addToBasket } from '@store/slices/basketSlice'
-import Basket from '@components/Basket/Basket'
-
 
 const Slider = () => {
     const {cards}:propositionsTypes = propositionsData
     const dispatch = useAppDispatch()
-    const handleAddToBasket = (item:{}) => {
-        dispatch(addToBasket(item))
+    const basketData = useAppSelector((state) => state.basket.data)
+
+    const handleAddToBasket = (item:any) => {
+        if(!basketData.find((elem:any) => elem.id === item.id)) {
+            dispatch(addToBasket(item))
+        }
     }
     return (
         <Swiper
@@ -66,7 +68,6 @@ const Slider = () => {
                     </div>
                 </SwiperSlide>
             ))}
-            <Basket/>
         </Swiper>
     )
 }
