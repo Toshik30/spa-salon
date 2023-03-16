@@ -17,7 +17,7 @@ const Basket:FunctionComponent = () => {
         dispatch(removeFromBasket(id))
     }
     return (
-       <div className={isOpen ? styles.basket : styles.basket + ' ' + styles.active}>
+       <div className={isOpen ? styles.basket + ' ' + styles.active : styles.basket}>
             <h2 className={styles.basket__heading}>Basket</h2>
             {basketDate.length > 0 ? basketDate?.map(({id,nameCard,price}) => (
                 <div key={id} className={styles.basket__item}>
