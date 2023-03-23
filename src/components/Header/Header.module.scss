@@ -35,16 +35,22 @@
     }
     }
    &__menu {
+    @extend %align-center;
     @include lmd {
         margin-left: auto;
     }
+    span {
+        cursor: pointer;
+    }
     &__basket {
         margin-right: 24px;
+        display: flex;
         cursor: pointer;
         position: relative;
         @include lmd {
             display: flex;
         }
+      
         .quntity {
             background: red;
             width: 20px;
