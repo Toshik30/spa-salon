@@ -65,7 +65,7 @@ const Login:FunctionComponent = () => {
                             onChange={handleFileChange}
                         />
                         {selectFile && (
-                            <img src={URL.createObjectURL(selectFile)} alt='selected'/>
+                            <Image src={URL.createObjectURL(selectFile)} alt='selected'/>
                         )}
                     </div>
                     <button type="submit"  className={styles.submitButton}>Login</button>
