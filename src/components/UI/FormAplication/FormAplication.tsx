@@ -56,7 +56,7 @@ const FormAplication: FunctionComponent = () => {
                                 className={styles.phone}
                             />
                             {errors.phoneNumber && <span className={styles.error} style={{color: 'red'}}>{errors.phoneNumber.message}</span>}
-                            <CustomBtn customStyle='btn' text={textBtn} />
+                            <CustomBtn customStyle='btn' text={textBtn} onClick />
                         </form>
                     </div>
                 </div>
