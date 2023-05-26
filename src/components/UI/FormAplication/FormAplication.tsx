@@ -8,6 +8,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import servicesData from '@data/servicesData.json'
 import { useAppDispatch } from '@store/hook'
 import { postSucceeded } from '@store/slices/postDataForm'
+
 type FormData = {
     name: string
     surname: string
@@ -55,7 +56,7 @@ const FormAplication: FunctionComponent = () => {
                                 className={styles.phone}
                             />
                             {errors.phoneNumber && <span className={styles.error} style={{color: 'red'}}>{errors.phoneNumber.message}</span>}
-                            <CustomBtn customStyle='btn' text={textBtn}  />
+                            <CustomBtn customStyle='btn' text={textBtn} />
                         </form>
                     </div>
                 </div>
