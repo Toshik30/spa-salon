@@ -5,7 +5,7 @@ import { url } from 'inspector'
 
 type Props = {
     img:string,
-    price: string, 
+    price: string | number, 
     itemName: string, 
     text: string,
     goDetails:string
