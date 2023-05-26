@@ -18,7 +18,7 @@ const Main = () => {
                            ))}
                         </h1>
                         <p>{description}</p>
-                        <CustomBtn customStyle='btn blackBrdr' text={btnText}/>
+                        <CustomBtn customStyle='btn blackBrdr' text={btnText} onClick/>
                     </div>
                     ))}
                     <div className={styles.main__slider}>
