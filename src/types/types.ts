@@ -35,7 +35,7 @@ export type advertisementTypes = {
 
 export type servicesTypes = {
     heading: string,
-    list: Array<{img:string, price: number, itemName: string, text: string,goDetails:string}>
+    list: Array<{img:string, price: any, itemName: string, text: string,goDetails:string}>
     goCatalog: {btnText: string, src:string}
 }
 
